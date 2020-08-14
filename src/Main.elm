@@ -5,16 +5,12 @@ import Html exposing (Html, div, text)
 
 
 type alias Model =
-    { message : String
-    , luckyNum : Int
-    }
+    Int
 
 
 init : Model
 init =
-    { message = ""
-    , luckyNum = 68
-    }
+    0
 
 
 view : Model -> Html msg
@@ -26,9 +22,7 @@ view _ =
 
 update : msg -> Model -> Model
 update _ _ =
-    { message = ""
-    , luckyNum = 68
-    }
+    0
 
 
 main : Program () Model msg
