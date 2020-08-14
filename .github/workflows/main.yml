@@ -26,7 +26,7 @@ jobs:
         run: |
           mkdir ./public
           mv ./index.html ./public/
-          cat "taiprogramer.xyz" > CNAME
+          echo "taiprogramer.xyz" > CNAME
           mv ./CNAME ./public/
         # If you have non-minimal setup with some assets and separate html/js files,
         # provide --output=<output-file> option for `elm make` and remove this step
