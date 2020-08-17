@@ -20,19 +20,25 @@ jobs:
         run: npm install elm --global
 
       - name: Make
-        run: elm make --optimize src/Main.elm
+        run: elm make --optimize src/Main.elm --output elm.js
 
       - name: Move files
         run: |
-          mkdir ./public
-          mv ./index.html ./public/
+          mkdir ./dist
+          mv ./elm.js ./dist/
+          cp src/index.html ./dist/
+
+      - name: Copy assets
+        run: |
+          cp src/assets ./dist/ -r
+
+      - name: Set custom domain
+        run: |
           echo "taiprogramer.xyz" > CNAME
-          mv ./CNAME ./public/
-        # If you have non-minimal setup with some assets and separate html/js files,
-        # provide --output=<output-file> option for `elm make` and remove this step
+          mv ./CNAME ./dist/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./dist
