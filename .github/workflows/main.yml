@@ -24,6 +24,7 @@ jobs:
 
       - name: Move files
         run: |
+          mkdir dist
           mv index.html ./dist/
 
       - name: Set custom domain
