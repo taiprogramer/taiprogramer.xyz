@@ -20,17 +20,11 @@ jobs:
         run: npm install elm --global
 
       - name: Make
-        run: elm make --optimize src/Main.elm --output elm.js
+        run: elm make --optimize src/Main.elm
 
       - name: Move files
         run: |
-          mkdir ./dist
-          mv ./elm.js ./dist/
-          cp src/index.html ./dist/
-
-      - name: Copy assets
-        run: |
-          cp src/assets ./dist/ -r
+          mv index.html ./dist/
 
       - name: Set custom domain
         run: |
