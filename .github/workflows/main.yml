@@ -19,13 +19,14 @@ jobs:
       - name: Setup Elm
         run: npm install elm --global
 
-      - name: Make
-        run: elm make --optimize src/Main.elm
+      - name: Compile elm to js
+        run: elm make --optimize src/Main.elm --output main.js
 
       - name: Move files
         run: |
           mkdir dist
-          mv index.html ./dist/
+          cp index.html ./dist/
+          mv main.js ./dist/
 
       - name: Set custom domain
         run: |
