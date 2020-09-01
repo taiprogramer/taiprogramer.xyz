@@ -11,6 +11,7 @@ body {
   max-height: 12.5em;
   margin: 3em 3em 0em 3em;
   padding-bottom: 3em;
+  overflow-wrap: break-word;
 }
 
 .card-item {
