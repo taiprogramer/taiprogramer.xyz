@@ -11,22 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v2.1.0
-        with:
-          node-version: '12.x'
-
-      - name: Setup Elm
-        run: npm install elm --global
-
-      - name: Compile elm to js
-        run: elm make --optimize src/Main.elm --output main.js
-
-      - name: Move files
+      - name: Copy source files
         run: |
           mkdir dist
-          cp index.html ./dist/
-          mv main.js ./dist/
+          cp src/* ./dist/ -rf
 
       - name: Set custom domain
         run: |

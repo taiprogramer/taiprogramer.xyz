@@ -1,9 +1,9 @@
 # My personal site
 
-```elm
-view : Model -> Html msg
-view _ = 
-  text "Written in Elm (functional programming language)."
-```
+Written in pure web technology.
+
++ Html
++ Css
++ Javascript
 
 [taiprogramer.xyz](https://taiprogramer.xyz)
