@@ -1,0 +1,20 @@
+/* / route #mobile */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.card {
+  max-width: 20em;
+  border: 1px solid #f0f;
+  max-height: 12.5em;
+  margin: 3em 3em 0em 3em;
+  padding-bottom: 3em;
+}
+
+.card-item {
+  font-size: 1.125em;
+  padding-left: 1.5em;
+  margin-top: 1.5em;
+}

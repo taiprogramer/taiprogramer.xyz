@@ -1,0 +1,21 @@
+/* change default behaviour */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #4a86e8;
+}
+
+p {
+  color: #bebebe;
+}
