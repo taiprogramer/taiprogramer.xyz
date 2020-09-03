@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #000;
+  transition: display 1s ease;
 }
 
 .card {
@@ -18,4 +19,16 @@ body {
   font-size: 1.125em;
   padding-left: 1.5em;
   margin-top: 1.5em;
+}
+
+/* / route #desktop */
+@media only screen and (min-width: 50em) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20em);
+  }
+
+  .card {
+    margin-right: 0em;
+  }
 }
