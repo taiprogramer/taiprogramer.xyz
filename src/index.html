@@ -9,15 +9,21 @@
     <title>taiprogramer's homepage</title>
   </head>
   <body>
+    <select id="language-select">
+      <option value="0" selected="selected">🇺🇸</option>
+      <option value="1">🇻🇳</option>
+    </select>
     <div class="card">
-      <p class="card-item">Huynh Van Tai</p>
+      <p class="card-item" id="fullname-holder">Huynh Van Tai</p>
       <p class="card-item card-item-center">
         <span id="age-holder">21</span>
-        years old.
+        <span id="age-tail-holder">years old.</span>
       </p>
       <p class="card-item">
-        No girl friend.
-        <a href="#">Apply for this position.</a>
+        <span id="girlfriend-status-holder">No girl friend.</span>
+        <a href="#" id="apply-for-girlfriend-position">
+          Apply for this position.
+        </a>
       </p>
     </div>
     <div class="card">
