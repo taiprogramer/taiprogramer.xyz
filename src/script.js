@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       'apply-for-girlfriend-position',
     ),
     ageHolder = document.getElementById('age-holder'),
+    infoTitleHolder = document.getElementById('info-title-holder'),
+    contactTitleHolder = document.getElementById('contact-title-holder'),
+    donationTitleHolder = document.getElementById('donation-title-holder'),
     languageSelector = document.getElementById('language-select')
 
   ageHolder.innerText = new Date().getFullYear() - 2000
@@ -28,5 +31,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       languageObj.girlfriend_status[languageIndex]
     applyForGirlFriendPositionHolder.innerText =
       languageObj.apply_for_girlfriend_position[languageIndex]
+    infoTitleHolder.innerText = languageObj.info_title[languageIndex]
+    contactTitleHolder.innerText = languageObj.contact_title[languageIndex]
+    donationTitleHolder.innerText = languageObj.donation_title[languageIndex]
   }
 })
