@@ -6,6 +6,7 @@ body {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +15,15 @@ body {
   margin: 1.5em 1.5em 0em 1.5em;
   overflow-wrap: break-word;
   padding: 1.5em;
+}
+
+.card-title {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .card-item {
