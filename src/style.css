@@ -1,8 +1,8 @@
 /* / route #mobile */
-body {
+
+main {
   display: flex;
   flex-direction: column;
-  background-color: #000;
 }
 
 .card {
@@ -19,7 +19,6 @@ body {
 
 .card-title {
   position: absolute;
-  color: #fff;
   text-align: center;
   width: 100%;
   top: 0;
@@ -45,7 +44,7 @@ body {
 
 /* / route #desktop */
 @media only screen and (min-width: 50em) {
-  body {
+  main {
     display: grid;
     grid-template-columns: repeat(auto-fill, 20em);
   }
