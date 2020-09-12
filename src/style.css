@@ -42,6 +42,12 @@ main {
   border: 1px solid #ff00ff;
 }
 
+#fork-me-link {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
 /* / route #desktop */
 @media only screen and (min-width: 50em) {
   main {
