@@ -9,5 +9,9 @@
   ],
   "info_title": ["Info", "Thông tin"],
   "contact_title": ["Contact", "Liên hệ"],
-  "donation_title": ["Donate", "Ủng hộ"]
+  "donation_title": ["Donate", "Ủng hộ"],
+  "public_key_link": [
+    "Get public key for sending secure message",
+    "Lấy khóa công khai cho việc gửi tin nhắn bảo mật"
+  ]
 }

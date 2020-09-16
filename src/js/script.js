@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     infoTitleHolder = document.getElementById('info-title-holder'),
     contactTitleHolder = document.getElementById('contact-title-holder'),
     donationTitleHolder = document.getElementById('donation-title-holder'),
-    languageSelector = document.getElementById('language-select')
+    languageSelector = document.getElementById('language-select'),
+    publicKeyLinkHolder = document.getElementById('public-key-link-holder')
 
   ageHolder.innerText = new Date().getFullYear() - 2000
   // fetch language pack
@@ -34,5 +35,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     infoTitleHolder.innerText = languageObj.info_title[languageIndex]
     contactTitleHolder.innerText = languageObj.contact_title[languageIndex]
     donationTitleHolder.innerText = languageObj.donation_title[languageIndex]
+    publicKeyLinkHolder.innerText = languageObj.public_key_link[languageIndex]
   }
 })
