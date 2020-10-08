@@ -1,3 +1,5 @@
+import { test } from './module/language.js'
+
 document.addEventListener('DOMContentLoaded', async () => {
   const fullNameHolder = document.getElementById('fullname-holder'),
     ageTailHolder = document.getElementById('age-tail-holder'),
@@ -37,4 +39,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     donationTitleHolder.innerText = languageObj.donation_title[languageIndex]
     publicKeyLinkHolder.innerText = languageObj.public_key_link[languageIndex]
   }
+
+  test()
 })
