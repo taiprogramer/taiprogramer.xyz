@@ -1,11 +1,11 @@
 {
   "title_text": "taiprogramer's homepage",
-  "full_name": "Huynh Van Tai",
-  "age_tail": "year olds.",
-  "girlfriend_status": "No girlfriend.",
-  "apply_for_girlfriend_position": "Apply for this position.",
-  "info_title": "Info",
-  "contact_title": "Contact",
-  "donation_title": "Donate",
-  "public_key_link": "Get public key for sending secure message"
+  "full_name_text": "Huynh Van Tai",
+  "age_tail_text": "year olds.",
+  "girlfriend_status_text": "No girlfriend.",
+  "apply_for_girlfriend_position_text": "Apply for this position.",
+  "info_title_text": "Info",
+  "contact_title_text": "Contact",
+  "donation_title_text": "Donate",
+  "public_key_link_text": "Get public key for sending secure message"
 }
