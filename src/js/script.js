@@ -1,4 +1,4 @@
-import { test } from './module/language.js'
+import { test, changeLanguage } from './module/language.js'
 
 document.addEventListener('DOMContentLoaded', async () => {
   const fullNameHolder = document.getElementById('fullname-holder'),
@@ -40,5 +40,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     publicKeyLinkHolder.innerText = languageObj.public_key_link[languageIndex]
   }
 
-  test()
+  // test()
+  changeLanguage('vi', 'index')
 })
