@@ -13,6 +13,17 @@
       header {
         text-align: center;
       }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* disable smooth scroll based on user preference */
+      @media screen and (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
     </style>
   </head>
   <body>
