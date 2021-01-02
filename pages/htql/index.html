@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ctu - Htql - Login</title>
+	<style>
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    padding: 16px;
+    width: 360px;
+    background: lightgray;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    color: #F0F;
+    font-weight: bold;
+    outline: none;
+    margin-top: 12px;
+    height: 34px;
+    border-radius: 8px;
+}
+
+input:focus {
+    border-radius: 8px;
+    border: 2px solid green;
+}
+
+input:hover {
+    border-radius: 8px;
+    border: 2px solid green;
+}
+
+input[type="text"] {
+    padding: 8px;
+}
+
+input[type="password"] {
+    padding: 8px;
+}
+
+button {
+    width: 55px;
+    height: 30px;
+}
+
+.display-password-wrap {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+#ck_display_password {
+    position: relative;
+    margin-right: 8px;
+    top: -5.5px;
+}
+
+#slogan {
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+	</style>
+</head>
+<body>
+    <p id="slogan">Open-source, readable javascript. Respect your privacy.</p>
+    <main>
+	<form 
+	    action="https://qldt.ctu.edu.vn/htql/sinhvien/dang_nhap.php"
+	    method="post">
+	    <h2>Login</h2>
+	    <input type="text" autocomplete="off"
+	    placeholder="Student code" name="txtDinhDanh" class="form-item">
+	    <input id="tx_password" type="password" placeholder="Password"
+	    name="txtMatKhau" class="form-item">
+	    <div class="display-password-wrap">
+		<input type="checkbox" name="ckPasswordVisible" id="ck_display_password">
+		<label for="ck_display_password">Display password</label>
+	    </div>
+	    <button type="submit" class="form-item">Go</button>
+	</form>
+    </main>
+</body>
+<script>
+const ckDisplayPassword = document.getElementById('ck_display_password')
+const txPassword = document.getElementById('tx_password')
+ck_display_password.onchange = _ => {
+    if (ckDisplayPassword.checked) {
+	txPassword.type = "text"
+    } else {
+	txPassword.type = "password"
+    }
+}
+</script>
+</html>
+
