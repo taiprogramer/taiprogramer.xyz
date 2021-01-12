@@ -1,0 +1,23 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: #f0f;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #f0f;
+}
+
