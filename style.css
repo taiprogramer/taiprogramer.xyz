@@ -21,3 +21,21 @@ a:visited {
     color: #f0f;
 }
 
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-column-gap: 10px;
+}
+
+@media screen and (max-width: 900px) and (min-width: 666px) {
+    main {
+	grid-template-columns: repeat(2, 50%);
+    }	
+}
+
+@media screen and (max-width: 666px) {
+    main {
+	grid-template-columns: 100%;
+    }	
+}
+
