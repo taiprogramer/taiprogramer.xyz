@@ -38,6 +38,16 @@ main {
     grid-row-gap: 20px;
 }
 
+.hover-to-reveal {
+    transition: opacity 1.75s;
+    opacity: 0;
+}
+
+.hover-to-reveal:hover {
+    transition: opacity 1.75s;
+    opacity: 1;
+}
+
 @media screen and (max-width: 900px) and (min-width: 666px) {
     main {
 	grid-template-columns: repeat(2, 50%);
