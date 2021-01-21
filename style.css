@@ -58,5 +58,10 @@ main {
     main {
 	grid-template-columns: 100%;
     }	
+
+    .hover-to-reveal {
+	transition: opacity 1.75s;
+	opacity: 1 !important;
+    }
 }
 
