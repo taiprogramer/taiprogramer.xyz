@@ -38,6 +38,10 @@ main {
     grid-row-gap: 20px;
 }
 
+.link-wrapper {
+    padding: 4px 0;
+}
+
 .hover-to-reveal {
     transition: opacity 1.75s;
     opacity: 0;
