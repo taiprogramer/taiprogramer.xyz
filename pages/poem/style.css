@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, main {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poem {
+    padding: 0.55em;
+    border: 1px solid green;
+}
+
+.title {
+    text-align: center;
+}
+
+.note {
+    text-align: right;
+}
+
+@media screen and (min-width: 30em){
+    .poem {
+	max-width: 30em;
+    }
+}
+
