@@ -52,10 +52,19 @@ main {
     opacity: 1;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
 @media screen and (max-width: 900px) and (min-width: 666px) {
     main {
 	grid-template-columns: repeat(2, 50%);
     }	
+
+    footer {
+	position: relative;
+    }
 }
 
 @media screen and (max-width: 666px) {
@@ -66,6 +75,10 @@ main {
     .hover-to-reveal {
 	transition: opacity 1.75s;
 	opacity: 1 !important;
+    }
+
+    footer {
+	position: relative;
     }
 }
 
