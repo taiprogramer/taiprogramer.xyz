@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #149414;
 }
 
 body {
     max-width: 100vw;
-    background-color: #000;
 }
 
 header {
@@ -15,19 +13,12 @@ header {
     text-align: center;
 }
 
-
 a {
     text-decoration: none;
-    color: #2b5329;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #649568 !important;
-}
-
-a:visited {
-    color: #2b5329;
 }
 
 main {
@@ -40,16 +31,6 @@ main {
 
 .link-wrapper {
     padding: 4px 0;
-}
-
-.hover-to-reveal {
-    transition: opacity 1.75s;
-    opacity: 0;
-}
-
-.hover-to-reveal:hover {
-    transition: opacity 1.75s;
-    opacity: 1;
 }
 
 footer {
@@ -71,11 +52,6 @@ footer {
     main {
 	grid-template-columns: 100%;
     }	
-
-    .hover-to-reveal {
-	transition: opacity 1.75s;
-	opacity: 1 !important;
-    }
 
     footer {
 	position: relative;
