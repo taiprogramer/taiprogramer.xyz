@@ -15,25 +15,21 @@
 	    <h2>Login</h2>
 	    <input type="text" autocomplete="off"
 	    placeholder="Student code" name="txtDinhDanh" class="form-item">
-	    <input id="tx_password" type="password" placeholder="Password"
+	    <input id="tf_password" type="password" placeholder="Password"
 	    name="txtMatKhau" class="form-item">
 	    <div class="display-password-wrap">
-		<input type="checkbox" name="ckPasswordVisible" id="ck_display_password">
-		<label for="ck_display_password">Display password</label>
+		<input type="checkbox" id="ckbox_display_password">
+		<label for="ckbox_display_password">Display password</label>
 	    </div>
-	    <button type="submit" class="form-item">Go</button>
+	    <button class="btn" type="submit" class="form-item">Log in</button>
 	</form>
     </main>
 </body>
 <script>
-const ckDisplayPassword = document.getElementById('ck_display_password')
-const txPassword = document.getElementById('tx_password')
-ck_display_password.onchange = _ => {
-    if (ckDisplayPassword.checked) {
-	txPassword.type = "text"
-    } else {
-	txPassword.type = "password"
-    }
+const ckboxDisplayPassword = document.getElementById('ckbox_display_password')
+const tfPassword = document.getElementById('tf_password')
+ckboxDisplayPassword.onchange = _ => {
+    tfPassword.type = ckboxDisplayPassword.checked ? "text" : "password";
 }
 </script>
 </html>
