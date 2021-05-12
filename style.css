@@ -1,3 +1,9 @@
+:root {
+    --dark-background: #151515;
+    --dark-text: #c5c5c5;
+    --dark-url: #7983fb;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -53,12 +59,12 @@ footer {
 
 @media (prefers-color-scheme: dark) {
     body {
-	background: #151515;
-	color: #c5c5c5;
+	background: var(--dark-background);
+	color: var(--dark-text);
     }
     
     a {
-	color: #7983fb;
+	color: var(--dark-url);
     }
 }
 
