@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="slogan">Open-source, readable javascript. Respect your privacy.</p>
+    <p id="slogan">Open-source, no javascript. Respect your privacy.</p>
     <main>
 	<form 
 	    action="https://qldt.ctu.edu.vn/htql/sinhvien/dang_nhap.php"
@@ -17,20 +17,9 @@
 	    placeholder="Student code" name="txtDinhDanh" class="form-item">
 	    <input id="tf_password" type="password" placeholder="Password"
 	    name="txtMatKhau" class="form-item">
-	    <div class="display-password-wrap">
-		<input type="checkbox" id="ckbox_display_password">
-		<label for="ckbox_display_password">Display password</label>
-	    </div>
 	    <button class="btn" type="submit" class="form-item">Log in</button>
 	</form>
     </main>
 </body>
-<script>
-const ckboxDisplayPassword = document.getElementById('ckbox_display_password')
-const tfPassword = document.getElementById('tf_password')
-ckboxDisplayPassword.onchange = _ => {
-    tfPassword.type = ckboxDisplayPassword.checked ? "text" : "password";
-}
-</script>
 </html>
 

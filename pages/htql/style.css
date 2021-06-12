@@ -12,6 +12,9 @@ main {
 }
 
 form {
+    padding: 1em;
+    background: lightgray;
+    border-radius: 0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,18 +40,7 @@ input[type="text"]:focus, input[type="password"]:focus {
     color: white;        
     padding: 8px;
     font-size: 16px;
-}
-
-.display-password-wrap {
-    display: flex;
-    align-items: center;
-    user-select: none;
-    padding: 8px;
-}
-
-#ckbox_display_password {
-    position: relative;
-    margin-right: 8px;
+    margin-top: 8px;
 }
 
 #slogan {
