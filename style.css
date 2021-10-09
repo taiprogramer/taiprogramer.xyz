@@ -49,13 +49,13 @@ footer {
 @media screen and (max-width: 900px) and (min-width: 666px) {
     main {
 	grid-template-columns: repeat(2, 1fr);
-    }	
+    }
 }
 
 @media screen and (max-width: 666px) {
     main {
 	grid-template-columns: 1fr;
-    }	
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -63,7 +63,7 @@ footer {
 	background: var(--dark-background);
 	color: var(--dark-text);
     }
-    
+
     a {
 	color: var(--dark-url);
     }
