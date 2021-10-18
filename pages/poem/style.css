@@ -5,7 +5,6 @@ main {
 .poem {
     padding: 0.55em;
     justify-self: center;
-    white-space: pre-line;
 }
 
 .title {
