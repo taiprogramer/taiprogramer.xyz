@@ -31,41 +31,49 @@ main {
     grid-gap: 1em;
 }
 
-.link-wrapper {
-    padding: 4px 0;
-}
-
 footer {
     position: relative;
 }
 
+.card {
+    max-width: 350px;
+}
+
+.link-wrapper {
+    padding: 4px 0;
+}
+
+#make_a_donation code {
+    overflow-wrap: break-word;
+}
+
 @media screen and (min-width: 900px) {
     footer {
-	position: fixed;
-	bottom: 0;
+        position: fixed;
+        bottom: 0;
     }
 }
 
 @media screen and (max-width: 900px) and (min-width: 666px) {
     main {
-	grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 666px) {
     main {
-	grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-	background: var(--dark-background);
-	color: var(--dark-text);
+        background: var(--dark-background);
+        color: var(--dark-text);
     }
 
     a {
-	color: var(--dark-url);
+        color: var(--dark-url);
     }
 }
 
