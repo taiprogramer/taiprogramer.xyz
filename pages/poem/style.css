@@ -1,0 +1,39 @@
+main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.poem {
+    padding: 0.55em;
+    justify-self: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.note {
+    text-align: right;
+}
+
+footer {
+    position: static;
+    padding: 1em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    padding: 0.55em;
+    text-decoration: none;
+}
+
+.page-active {
+    text-decoration: underline;
+}
+

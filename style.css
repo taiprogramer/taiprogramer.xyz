@@ -1,0 +1,87 @@
+:root {
+    --dark-background: #151515;
+    --dark-text: #c5c5c5;
+    --dark-url: #7983fb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans";
+}
+
+header {
+    padding: 1.5em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    line-height: 1.3;
+}
+
+footer {
+    position: relative;
+}
+
+.card {
+    max-width: 350px;
+}
+
+.link-wrapper {
+    padding: 4px 0;
+}
+
+#make_a_donation code {
+    overflow-wrap: break-word;
+}
+
+@media screen and (min-width: 900px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 666px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 666px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--dark-background);
+        color: var(--dark-text);
+    }
+
+    a {
+        color: var(--dark-url);
+    }
+}
+
+.js-warning::after {
+    content: "JS";
+    color: red;
+    font-weight: bold;
+    position: relative;
+    top: -0.35em;
+}

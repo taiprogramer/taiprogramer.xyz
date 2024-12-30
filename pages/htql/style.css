@@ -1,0 +1,56 @@
+main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="password"] {
+    height: 48px;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid black;
+}
+
+.btn {
+    background-color: #008CBA; /* Blue */
+    border: none;        
+    color: white;        
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+#slogan {
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* dark form */
+@media (prefers-color-scheme: dark) {
+    input[type="text"], input[type="password"] {
+	border: 1px solid gray;
+	background: var(--dark-background);
+	color: #ffffff;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+	border: 1px solid lightgray;
+    }
+}
+
